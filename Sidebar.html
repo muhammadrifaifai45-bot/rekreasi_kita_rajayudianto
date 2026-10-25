@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuangRekreasi</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="headingnavbar">
+        <div class="HeadingLogo">Ruang Rekreasi</div>
+        <nav class="linkPage">
+            <a href="#Home" class="nav-item-active">
+             Home
+            </a>
+            <a href="#kategori-section" class="nav-item">
+              Daftar Olahraga
+            </a>
+            <a href="#about" class="nav-item">
+                About
+            </a>
+            <a href="#data-olahraga-event" class="nav-item">
+                Data Olahraga 
+            </a>
+        </nav>
+        <div class="nav-buttons">
+            <a href="btn-support" class="btn-support">Support</a>
+            <a href="https://unj.ac.id/" class="btn-join">Join </a>
+        </div>
+       
+    </header>
+
+   <main id="about" class="hero-section">
+        <div class="text-kiri">
+            <h1 ><span class="highlight">RuangRekreasi</span> Menemukan Olahraga terbaik untuk melepas penat</h1>
+        </div>
+        <div class="text-kanan">
+        <p>Menyeimbangkan Tubuh dan pikiran di mulai dari langkah kecil yang menyenangkan melalui berbagai olahraga rekreasi yang pastinya menyenangkan</p>           
+        </div>
+   </main>
+
+   <section class="banner-image">
+    <div class="image-card">
+       <img src="rekreasi1.jpg" alt="Rekreasi" class="img">
+       <div class="action-card">
+        <div class="card-icon">
+            <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+              </svg>
+        </div>
+        <p>Mari mendukung Perkembangan Olahraga Rekreasi di negeri kita</p>
+        <a href="https://journal.unj.ac.id/unj/index.php/jor" class="btn-donate">Artikel</a>
+      </div>
+    </div>
+    </div>
+   </section>
+
+
+    
+   <!-- about section kategori -->
+  <section id="kategori-section" class="about-section">
+    <div class="about-header">
+      <span class="about-subtitle">Olahraga Rekreasi Paling diminati</span>
+      
+      <h2 class="about-title-gradient">Ruang Rekreasi hadir membawa keceriaan dan energi positif untuk mendampingi langkah sehatmu.</h2>
+    </div>
+
+ 
+    <div class="cards-stack-container">
+      
+    
+      <div class="sport-card card-left" onclick="this.classList.toggle('active')">
+        <img src="sepda.jpeg" alt="Bersepeda" class="sport-img">
+        <div class="sport-overlay-tagline">
+            <div class="card-text-wrapper">
+              <h3>Gowes Santai</h3>
+              <p>Nikmati angin segar dan kayuh kebahagiaanmu tanpa batas.</p>
+            </div>
+          </div>
+          
+      </div>
+
+      <div class="sport-card card-center" onclick="this.classList.toggle('active')">
+        <img src="yoga.jpeg" alt="Yoga" class="sport-img">
+        <div class="sport-overlay-tagline">
+          <h3>Yoga & Meditasi
+          </h3>
+          <p>Temukan ketenangan jiwa dan kelenturan tubuh di alam bebas.</p>
+        </div>
+      </div>
+
+      <!-- Kartu 3: Piknik & Jalan Sehat -->
+      <div class="sport-card card-right" onclick="this.classList.toggle('active')">
+        <img src="outbond.jpeg" alt="Outbound" class="sport-img" >
+        <div class="sport-overlay-tagline">
+          <h3>Fun Outbound</h3>
+          <p>Satukan tawa dalam kebersamaan lewat aktivitas kelompok seru.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section id="data-olahraga-event" class="info-table-section">
+    
+    <div class="table-header">
+      <h2 class="section-title">Jadwal & Panduan Ruang Rekreasi</h2>
+      <p class="section-desc">Pilih kegiatan rekreasi favoritmu dan perhatikan detail perlengkapan serta ketentuannya di bawah ini.</p>
+    </div>
+
+    <div class="table-container">
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Nama Olahraga</th>
+            <th>Waktu Pelaksanaan</th>
+            <th>Lokasi Kumpul</th>
+            <th>Kuota</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Gowes Santai</strong></td>
+            <td>Sabtu, 06.00 WIB</td>
+            <td>Taman Kota Timur</td>
+            <td>25 Orang</td>
+            <td><span class="badge-status open">Tersedia</span></td>
+          </tr>
+          <tr>
+            <td><strong>Yoga & Meditasi</strong></td>
+            <td>Minggu, 07.00 WIB</td>
+            <td>Hutan Pinus Asri</td>
+            <td>15 Orang</td>
+            <td><span class="badge-status open">Tersedia</span></td>
+          </tr>
+          <tr>
+            <td><strong>Fun Outbound</strong></td>
+            <td>Minggu, 09.00 WIB</td>
+            <td>Area Kemah Hijau</td>
+            <td>50 Orang</td>
+            <td><span class="badge-status full">Penuh</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="additional-info-grid">
+      
+      <div class="info-box-left">
+        <h3>Perlengkapan yang Wajib Dibawa:</h3>
+        <ul class="main-list">
+          <li>Pakaian Olahraga yang Nyaman
+            <ul class="nested-list">
+              <li>Kaos berbahan katun/jersey</li>
+              <li>Sepatu olahraga (bukan sandal)</li>
+            </ul>
+          </li>
+          <li>Kebutuhan Pribadi
+            <ul class="nested-list">
+              <li>Botol minum isi ulang (Tumblr)</li>
+              <li>Obat-obatan khusus pribadi</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="info-box-right">
+        <h3>Catatan Penting Peserta:</h3>
+        
+        <p class="formatting-demo">
+          Pendaftaran <b>wajib secara online</b>. Setiap peserta diharapkan datang <span class="bg-font-sample">Tepat Waktu</span>. 
+          Bagi peserta <i>Yoga</i> harap membawa matras sendiri. Fasilitas umum disediakan secara <strong>gratis</strong> oleh panitia. 
+          <mark>Diskon khusus</mark> untuk pendaftar kelompok. <small>Syarat & ketentuan berlaku.</small> 
+          Registrasi gelombang ke-1 (<del>Rp 50.000</del>) sudah ditutup, sekarang menggunakan harga gelombang ke-2 (<ins>Rp 0 / Free</ins>). 
+          Rumus hidrasi tubuh saat rekreasi adalah H<sub>2</sub>O minimum 1 liter, dengan intensitas energi maksimal E=mc<sup>2</sup>.
+        </p>
+
+        <blockquote class="custom-quote">
+          "Kesehatan bukan tentang ukuran tubuh, melainkan tentang seberapa bahagia kamu menggerakkan tubuh dan menenangkan pikiranmu."
+        </blockquote>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      
+ 
+      <div class="footer-column-left">
+        <ul class="footer-links-large">
+          <li><a href="#">Daftar Olahraga</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Data Olahraga</a></li>          
+        </ul>
+      </div>
+
+
+      <div class="footer-column-right">
+        
+       
+        <div class="subscribe-box">
+          <input type="email" placeholder="Your Email" class="subscribe-input">
+          <button type="submit" class="subscribe-button">Subscribe</button>
+        </div>
+
+        <div class="learn-section">
+          <h3>Hubungi Kami</h3>
+          <div class="learn-grid">
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">News</a>
+            <a href="#">Event</a>
+          </div>
+        </div>
+
+        <!-- Media Sosial (Follow) -->
+        <div class="follow-section">
+          <h3>Follow</h3>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/p/C-cLvrpy_Hr/?utm_source=ig_web_copy_link&psln=NTc4MTIwNjQ2YQ==" class="icon-circle"><img src="ig.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@unj_official" class="icon-circle"><img src="yt.png" alt="X"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- AREA BARU: Strip Hitam Copyright Paling Bawah -->
+    <div class="footer-copyright">
+      <p>&copy; 2026 Ruang Rekreasi. All Rights Reserved. UTS Pemrograman Web.</p>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>

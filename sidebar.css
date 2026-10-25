@@ -1,0 +1,728 @@
+*{
+    margin : 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #f7f7f7;
+    color: #333333;
+    padding: 0 40px;
+}
+
+.headingnavbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+}
+
+.HeadingLogo{
+    font-size: 25px;
+    font-weight: 900;
+    color: #047504;
+}
+
+.linkPage{
+    display: flex;
+    background-color: #d1d5db;
+    align-items: center;
+    padding: 6px;
+    border-radius: 35px;
+    gap: 5px;
+}
+
+.nav-item-active{
+    text-decoration: none;
+    background-color: #047504;
+    color: white;
+    padding: 15px;
+    border-radius: 35px;
+
+}
+
+.nav-item{
+    text-decoration: none;
+    color: #4b5563;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.nav-buttons{
+    padding: 5px 15px;
+    gap: 8px;
+    display: flex;
+     align-items: center;
+}
+
+.btn-support{
+ text-decoration: none;
+  color: #374151;
+  background-color: #d1d5db;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: px;
+  font-weight: 700; 
+}
+
+.btn-join {
+  text-decoration: none;
+  color: white;
+  background-color: #4caf50;
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Heading Navbar selesai */
+
+.hero-section{
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  align-items: flex-end;
+}
+
+.text-kiri h1{
+    font-size: 38px;
+  font-weight: 900;
+  color: #1f2937;
+  line-height: 1.3;
+}
+
+.text-kiri .highlight{
+    color: #047504;
+}
+
+.text-kanan p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 60px;
+}
+
+.banner-image{
+    margin-bottom: 60px;
+}
+
+.image-card{
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.action-card {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  width: 340px;
+  padding: 25px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.card-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.action-card p {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #4b5563;
+  margin-bottom: 18px;
+}
+
+.action-card .btn-donate{
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #737373; /* Warna abu gelap tombol bawah */
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+
+
+   .about-section {
+  padding: 80px 0;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-header {
+  margin-bottom: 60px;
+}
+
+.about-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #4b5563;
+  display: block;
+  margin-bottom: 15px;
+}
+
+
+.about-title-gradient {
+  font-size: 32px;
+  font-weight: 900; 
+  line-height: 1.4;
+  max-width: 850px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #047504 0%, #4caf50 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+.cards-stack-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 480px;
+  margin-top: 40px;
+}
+
+
+.sport-card {
+  position: absolute;
+  width: 280px;
+  height: 380px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.sport-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+/* POSISI AWAL 3 KARTU BERDASARKAN GAMBAR REFERENSI */
+.card-left {
+  transform: translateX(-180px) rotate(-8deg);
+  z-index: 1;
+}
+
+.card-center {
+  transform: translateX(0) scale(1.05);
+  z-index: 3; /* Kartu tengah berada paling depan */
+}
+
+.card-right {
+  transform: translateX(180px) rotate(8deg);
+  z-index: 2;
+}
+
+
+.sport-card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+.sport-card:hover .sport-img {
+  transform: scale(1.05);
+}
+
+/* TAGLINE YANG MUNCUL KETIKA FOTO DIKLIK */
+.sport-overlay-tagline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(4, 117, 4, 0.95) 40%, rgba(0, 0, 0, 0.4) 100%);
+  color: white;
+  padding: 20px 20px 15px 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  text-align: left;
+  opacity: 0; 
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  box-sizing: border-box;
+}
+
+
+.sport-overlay-tagline h3 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: auto; 
+  margin-bottom: 6px; 
+}
+
+
+
+.sport-overlay-tagline p {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #e5e7eb;
+  margin-bottom: 5px; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+
+.sport-card.active {
+  z-index: 10 !important; /* Membuat kartu yang diklik melompat ke paling depan */
+  transform: scale(1.1) rotate(0deg) translateY(-10px) !important;
+}
+
+.sport-card.active .sport-overlay-tagline {
+  opacity: 1; 
+}
+
+/* RESPONSIVE LAYOUT */
+@media (max-width: 768px) {
+  .cards-stack-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .sport-card {
+    position: relative; 
+    width: 100%;
+    max-width: 320px;
+    height: 340px;
+  }
+
+  .card-left, .card-center, .card-right {
+    transform: none !important;
+  }
+  
+  .sport-card.active {
+    transform: scale(1.03) !important;
+  }
+}
+/* selesai /
+
+
+/* table styling  */
+   .info-table-section {
+  padding: 60px 0;
+  max-width: 1100px;
+  margin: 0 auto 80px auto;
+}
+
+.table-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.section-desc {
+  font-size: 15px;
+  color: #4b5563;
+}
+
+
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Agar tabel aman digeser di layar HP */
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 15px;
+}
+
+.custom-table th {
+  background-color: #047504; /* Hijau logo permintaan */
+  color: white;
+  padding: 18px;
+  font-weight: 700;
+}
+
+.custom-table td {
+  padding: 18px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+.custom-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Warna baris selang-seling */
+.custom-table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* Badge Status di Dalam Tabel */
+.badge-status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-status.open {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.badge-status.full {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* LAYOUT GRID DUA KOLOM UNTUK INFO TAMBAHAN */
+.additional-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.info-box-left, .info-box-right {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.info-box-left h3, .info-box-right h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 15px;
+  border-left: 4px solid #047504;
+  padding-left: 10px;
+}
+
+/* 13) STYLING NESTED LIST */
+.main-list {
+  padding-left: 20px;
+  color: #374151;
+}
+
+.main-list li {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.nested-list {
+  padding-left: 20px;
+  margin-top: 5px;
+  list-style-type: circle; /* Mengubah bentuk bullet list  */
+}
+
+.nested-list li {
+  font-weight: 400;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+/* STYLING FORMATTING & BACKGROUND FONT */
+.formatting-demo {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+ 
+.bg-font-sample {
+  background-color: #fef08a;
+  color: #854d0e;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+/* 12) STYLING QUOTATION */
+.custom-quote {
+  border-left: 3px italic #047504;
+  background-color: #f0fdf4;
+  padding: 15px;
+  border-radius: 0 12px 12px 0;
+  font-style: italic;
+  color: #166534;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+}
+
+
+@media (max-width: 768px) {
+  .additional-info-grid {
+    grid-template-columns: 1fr; /* Kolom info menumpuk ke bawah di HP */
+    gap: 20px;
+  }
+}
+
+/* done styling table */
+
+
+.main-footer {
+  background-color: #3b7a44; 
+  color: white;
+  margin-left: -40px;  
+  margin-right: -40px; 
+  margin-bottom: -40px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-links-large {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links-large li {
+  margin-bottom: 12px;
+}
+
+.footer-links-large a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px; 
+  font-weight: 400;
+  transition: opacity 0.3s;
+}
+
+.footer-links-large a:hover {
+  opacity: 0.8;
+}
+
+.footer-column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.subscribe-box {
+  background-color: #d1d5db; 
+  padding: 6px 6px 6px 20px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 450px;
+}
+
+.subscribe-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #374151;
+  width: 70%;
+}
+
+.subscribe-button {
+  background-color: #047504; 
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: #035c03;
+}
+
+.learn-section h3, .follow-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.learn-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.learn-grid a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.learn-grid a:hover {
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-circle {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.icon-circle img {
+  width: 18px;
+  height: 18px;
+}
+
+.icon-circle:hover {
+  transform: scale(1.1);
+}
+
+.footer-copyright {
+  background-color: #1a1a1a; 
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.footer-copyright p {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .main-footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+  .footer-links-large a {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) { 
+  body { 
+    padding: 0 15px; 
+  } 
+  
+  .headingnavbar { 
+    flex-direction: column; 
+    gap: 15px; 
+    align-items: center; 
+  } 
+  
+  .hero-section { 
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+  } 
+  
+  .hero-kiri h1 { 
+    font-size: 28px; 
+    text-align: center; 
+  } 
+  
+  .image-card { 
+    height: auto; 
+    max-height: 400px; 
+    width: 100%;
+    object-fit: cover; 
+  } 
+  
+  .action-card { 
+    position: relative; 
+    width: 100%; 
+    right: 0; 
+    bottom: 0; 
+    margin-top: 20px;
+  } 
+}
+
+
+@media (max-width: 480px) {
+  .hero-kiri h1 {
+    font-size: 24px; 
+  }
+  
+  .image-card {
+    max-height: 280px; 
+  }
+}
+
+
+
+
+
+
+
